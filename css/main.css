@@ -184,6 +184,11 @@ main .avatar img {
     
 }
 
+.images-projects img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 .images-projects p {
     width: 350px;
 }
