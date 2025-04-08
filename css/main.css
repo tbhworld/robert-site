@@ -53,7 +53,7 @@ body .menu-right a:hover {
 
 main {
     flex: 1;
-    padding-top: 120px;
+    padding-top: 90px;
     display: flex;
     justify-content: center;
 }
@@ -98,7 +98,10 @@ main .avatar img {
     text-decoration: none;
 }
 
-.button-resume button, .projects .button-resume{
+/* Вторая кнопка */
+
+
+.button-resume button{
     padding: 5px 180px;
     border-radius: 10px;
     border: none;
@@ -107,14 +110,26 @@ main .avatar img {
     font-size: 25px;
 }
 
-.button-resume button, .projects .button-resume{
-    padding: 5px 20px;
+.button-resume2 a {
+    color: #FFF7EA;
+    text-decoration: none;
 }
-.button-resume button:hover {
+
+.projects .button-resume2 {
+    padding: 5px 50px;
+    border-radius: 10px;
+    border: none;
+    background: #43749C;
+    color: #FFF7EA;
+    font-size: 25px;
+}
+
+
+.button-resume button:hover{
     background: #0d3556;
 }
 
-.button-resume button:hover{
+.button-resume2:hover {
     background: #0d3556;
 }
 
@@ -274,4 +289,9 @@ p {
     font-size: 18px;
     font-weight: 400;
     color: #1a1a1a;
+}
+
+.tg-icon {
+    width: 20px;
+    height: 20px;
 }
