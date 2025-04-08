@@ -1,43 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 64px 64px;
+}
+
 body {
     background: #FFF7EA;
     font-family: Roboto;
     font-size: 20px;
-    margin: 64px 64px;
 }
 
 body header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background: #000;
+    width: 100%;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
-body a {
-    color: #10141B;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-body header .menu-right {
-    display: flex;
-
-}
-
-body header .menu-logo-left {
-    text-align: left;
+body .menu-logo-left {
     font-size: 26px;
+    font-weight: 700;
+    color: #FFF7EA;
+}
+
+body .menu-right a {
+    color: #FFF7EA;
     font-weight: 500;
+    font-size: 18px;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+body .menu-right a:hover {
+    color: #ffb347;
 }
 
 main {
-    padding-top: 40px;
+    flex: 1;
+    padding-top: 120px;
     display: flex;
     justify-content: center;
 }
 
 main .avatar {
     width: 200px;
-    height: 200px;
+    height: 153px;
     border-radius: 50%;
     overflow: hidden;
 
@@ -52,7 +75,6 @@ main .avatar {
 main .avatar img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .avatar-text {
@@ -61,35 +83,85 @@ main .avatar img {
 
 .avatar-text p {
     margin: 0 auto;
-    width: 350px;
+    width: 450px;
 }
 
 .button-resume {
-    margin-top: 25px;
+    margin-top: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.button-resume a {
+    color: #FFF7EA;
+    text-decoration: none;
+}
 
-.button-resume button{
-    padding: 10px 30px;
+.button-resume button, .projects .button-resume{
+    padding: 5px 180px;
     border-radius: 10px;
     border: none;
     background: #43749C;
     color: #FFF7EA;
+    font-size: 25px;
 }
 
+.button-resume button, .projects .button-resume{
+    padding: 5px 20px;
+}
+.button-resume button:hover {
+    background: #0d3556;
+}
+
+.button-resume button:hover{
+    background: #0d3556;
+}
+
+.about {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.about p{
+    width: 350px;
+}
+
+.skills {
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .skills .bordered {
     display: flex;
-    gap: 0 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 450px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .skills .bordered .skills-border {
-    background: #E6E5E0;
+    background: #e4e4e4;
     border-radius: 8px;
     font-size: 15px;
 
 }
+
+.skills .bordered .skills-border:hover {
+    background: #d3d0d0;
+}
+
+.skills .bordered .skills-border a:hover {
+
+    color: #f4ca8f;
+}
+
 
 .skills .bordered .skills-border p {
     padding-left: 10px;
@@ -97,33 +169,94 @@ main .avatar img {
 }
 
 .images-projects {
-    width: 250px;
-    height: 125px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     gap: 20px;
-    margin-bottom: 210px;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
+
 .images-projects img {
+    width: 350px;
+    height: 175px;
     border-radius: 12px;
+    object-fit: cover;
+    
 }
 
 .images-projects p {
-    width: 250px;
+    width: 350px;
 }
 
-.contacts .button-tg {
+footer {
+    background: #000;
+    color: #fff;
+    padding: 45px 64px;
+    font-family: Roboto, sans-serif;
+}
+
+.footer-container {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 0 20px;
-
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 40px;
 }
 
-.contacts .button-tg button {
-    padding: 15px 75px;
-    border-radius: 10px;
-    border: 0;
-    background: #43749C;
-    color: #FFF7EA;
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-column p {
+    font-size: 14px;
+    margin: 6px 0;
+    color: #ccc; /* Сделаем читаемым */
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+    color: #43749C;
+}
+
+footer .copyright {
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.7;
+    text-align: right;
+    color: #ccc;
+}
+
+/* Шрифты размеры */
+
+h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1a1a1a;
 }
