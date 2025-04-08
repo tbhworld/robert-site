@@ -113,23 +113,6 @@ main .avatar img {
     width: 250px;
 }
 
-.images-projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-}
-
-.images-projects > div {
-    width: 250px;
-    background: #f3f3f3;
-    border-radius: 12px;
-    padding: 16px;
-}
-
-section {
-}
-
-
 .contacts .button-tg {
     display: flex;
     justify-content: flex-end;
