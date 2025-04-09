@@ -291,7 +291,16 @@ p {
     color: #1a1a1a;
 }
 
-.tg-icon {
-    width: 20px;
-    height: 20px;
+/*Фон для проектов*/
+.obvertka {
+    background: #e4e4e4;
+    padding: 30px;
+    border-radius: 15px;
 }
+
+.tg-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
