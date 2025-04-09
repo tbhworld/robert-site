@@ -115,6 +115,10 @@ main .avatar img {
     text-decoration: none;
 }
 
+.forbutton2 {
+    padding-top: 35px;
+}
+
 .projects .button-resume2 {
     padding: 5px 50px;
     border-radius: 10px;
@@ -269,6 +273,8 @@ footer .copyright {
     opacity: 0.7;
     text-align: right;
     color: #ccc;
+
+
 }
 
 /* Шрифты размеры */
